@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyfarmes and Animations </title>
+    <style>
+          .container{
+            background-color: greenyellow;
+          }
+          .box{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /*animation-name: parth1;*/
+            animation-name: parth2;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            /*animation-fill-mode: alternate;*/
+            /*animation-timing-function: ease-in-out;*/
+            /*animation-delay: 3s;*/
+            /*animation-direction: reverse;*/
+
+            /*animation: animation-name animation-duration animation-timing-function animation-delay
+            animation-iteration-count animation-fill-mode;*/
+            animation: parth 5s ease-in is 12 backwards;
+
+          }
+          @keyframes parth2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }25%{
+                top: 250px;
+                left: 0px;
+
+            }75%{
+                top: 250px;
+                left: 250px;
+
+            }100%{
+                top: 0px;
+                left: 250px;
+
+            }
+          }
+          @keyframes parth1{
+            form{
+                width: 200px;
+            }
+            to{
+                width: 400px;
+            }
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>

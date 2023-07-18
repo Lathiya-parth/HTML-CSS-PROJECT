@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid + media queries</title>
+</head>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+    @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+        
+        }.container{
+                
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            body {
+                background-color: blue;
+                text-align: center;
+            }
+            .container{
+                
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+       @media (min-width: 500px) and (max-width:800px) {
+            body {
+                background-color: yellow;
+            }
+            .container{
+                
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+         @media (min-width: 800px) {
+            body {
+                background-color: green;
+            }
+            
+         
+    }
+     .bdr{
+         border: 2px solid black;
+         padding: 23px;
+         background-color: wheat;
+     }   
+     nav{
+        grid-area: navbar;
+    }
+     section{
+      grid-area: section;
+    }
+     aside{
+      grid-area: aside;
+    }
+     footer{
+      grid-area: footer;
+      text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <nav class="bdr">
+           <span>home</span>
+           <span>about</span>
+           <span>services</span>
+           <span>contact</span>
+        </nav>
+            <section class="bdr">
+              <h2>learn css in hindi</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quae dolorum porro asperiores magnam dolor culpa laboriosam sint officia aliquid, enim quod dolorem illum itaque pariatur sed error. Voluptatum tempora quos quisquam esse sint expedita optio tempore commodi aliquid, eaque aperiam. Soluta in maxime, quae debitis, obcaecati, provident eum quod earum nam at animi dicta consequuntur pariatur numquam doloribus. Maiores nemo quasi culpa sint cum architecto perspiciatis aut illo error nostrum et beatae autem animi minus eligendi sequi quibusdam tempore rem neque, eum quidem? Vel eaque accusamus odit similique dolorem! Quibusdam inventore, dolorem atque obcaecati sed dolore tempora voluptatum ipsam odit necessitatibus molestiae quod dolor laborum asperiores, iure eos at nihil porro deleniti sint corrupti! Sed quas repellat cupiditate quae esse adipisci!</p>
+            </section>
+        <aside class="bdr">
+                <h1>more about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">copyright parthlathiya 2023</footer>
+</body>
+</html>

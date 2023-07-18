@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boys Hostel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width:900px)" href="phone.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<style>
+    table, th, td{
+        text-align: left;
+        background-color: black;
+        color: white;
+    }
+    th,td{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 150px;
+        padding-right: 40px;
+    }
+    th, td:hover{
+        color: red;
+    }
+    th{
+        font-size: larger;
+    }
+    
+</style>
+<body>
+    <nav id="navbar">
+        <div id="hostel">
+            <img src="hostel.jpg" alt="Boys Hostel">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services">Services</a></li>
+            <li class="item"><a href="#detail">Detail</a></li>
+            <li class="item"><a href="#contact us">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Boys Hostel</h1> 
+        <!-- <marquee behavior="" direction=""><h2 class="marqu2">Sunday Special:</h2>
+        </marquee> -->
+       <!-- <div class="about" id="about" data-aos="zoom-in"></div> -->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quidem
+        nisi voluptate excepturi repellat ex?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus magni fuga accusamus ad.</p>
+      
+        <button class="btn">Open</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center"> OUR Facilities</h1>
+        <div id="services">
+            <div class="box">
+                <img src="food1.jpg" alt="">
+                <h2 class="h-secondary center">food services</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, atque.</p>
+            </div>
+            <div class="box">
+                <img src="gm.png" alt="">
+                <h2 class="h-secondary center">GYM Provide</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, atque.</p>
+            </div>
+            <div class="box">
+                <img src="room.png" alt="">
+                <h2 class="h-secondary center">Room Services</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, atque.</p>
+            </div>
+            <div class="box">
+                <img src="festival.png" alt="">
+                <h2 class="h-secondary center">Festival</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, atque.</p>
+            </div>
+            <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+              AOS.init();
+            </script> -->
+        </div>
+    </section>
+    <section id="detail">
+        <h1 class="h-primary center">Form Detail</h1>
+        <div id="details">
+            <!-- <div class="detail-item">
+                <img src="boys.png" alt="">
+            </div> -->
+            <form action="backend.php">
+                <!-- <label for="name">name:</label> -->
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="myName" id="name" placeholder="Enter your Name">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="Role">Role: </label>
+                   <input type="text" name="myRole"  placeholder="Enter your Role">
+                 </div>
+                <br>
+                <div class="form-group">
+                    <label for="Email">Email: </label>
+                    <input type="email" name="myEmail"  placeholder="Enter your Email">
+                </div>
+               
+                <br>
+                <div class="form-group">
+                    <label for="Date"> date: </label>
+                   <input type="date" name="myDate"  placeholder="Enter your Date">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="Number"> Number:</label>
+                   <input type="number" name="Mynumber"  placeholder="Enter your Number">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="Are you eligable">Are you eligable?: </label>
+                    <input type="checkbox" name="myeligable">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="Gender">Gender:</label>
+                    Male<input type="radio" name="myGender">FeMale<input type="radio" name="myGender">
+                    other<input type="radio" name="myGender">
+                </div>
+                <div class="form-group">
+                   <label for="name"> write about yourself:</label>
+                  <br><textarea name="myText" cols="10" rows="5"></textarea>
+                </div>
+                <button class="btn">submit</button>
+                
+        </div>
+     </section>
+    <section id="contact us">
+        <table style="height:100%;" width="100%;">
+            <thead>
+                <tr style="height: 100%;">
+                    <th>Sitemap</th>
+                    <th>Follow US</th>
+                    <th>Contact US</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Temple</td>
+                    <td>                <i class="fa-brands fa-facebook"></i>
+                        Facebook</td>
+                    <td><i class="fa-solid fa-location-dot"></i>
+                        Address : Swaminarayan Farm, Coba - Adalaj Road, Adalaj</td>
+                </tr>
+                <tr>
+                    <td>Photo Gallery</td>
+                    <td><i class="fa-brands fa-instagram"></i>
+                        Instagram</td>
+                    <td><i class="fa-solid fa-phone-volume"></i>
+                         shree Annapurnadham Adalaj </td>
+                </tr>
+                <tr>
+                    <td>Vision</td>
+                    <td><i class="fa-brands fa-google"></i>
+                        Google</td>
+                    <td><i class="fa-solid fa-envelope"></i>
+                        https://annapurnadhamadalaj.com/admission-form.html#</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; www.myonlineMeal.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>
+

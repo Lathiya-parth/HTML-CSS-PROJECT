@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selector & more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(233,245,201);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: bisque;
+            background-color: blueviolet;
+
+        }
+        a:visited{
+            background-color: rgb(31, 186, 44);
+        }
+        a:active{
+            background-color: rgb(226, 43, 107);
+        }
+
+        .btn{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            background-color: lightsalmon;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            color: cadetblue;
+            background-color: coral;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+    <h3>this is my heding</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, itaque. Sequi temporibus quod odio cum consectetur reiciendis distinctio fuga error tempore nisi libero quae laboriosam a nihil modi, optio iure?</p>
+    <a href="https://facebook.com" class="btn">Read more</a>
+    <button class="btn">contact us</button>
+    </div>
+</body>
+</html>

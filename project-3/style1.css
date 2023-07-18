@@ -1,0 +1,265 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+  }
+  
+
+:root{
+      --navbar-height: 59px;
+  }
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#hostel{
+    margin:10px 30px;
+}
+#hostel img{
+    margin: 10px 30px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Victor Mono', monospace;
+}
+#navbar ul li{
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a{
+      color:white;
+      display: block;
+      padding: 3px 12px;
+      border-radius: 20px;
+      text-decoration: none;     
+} 
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 615px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('./bg3.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Victor Mono', monospace;
+    font-size: 70px;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Victor Mono', monospace;
+
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 7px 5px 10px 4px black;
+    
+}
+#services{
+    margin: 34px;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+#services .box{
+    border: 2px solid black;
+    padding: 35px;
+    margin: 40px 35px;
+    border-radius: 28px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 7px 5px 10px 4px black;
+}
+#services .box img{
+    height: 150px;
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Victor Mono', monospace;
+}
+#details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+  }
+  #details input,
+  #details textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+  }
+  #details form{
+    width: 40%;
+    font-size: 1.1rem;
+  }
+  #details label{
+    width: 1.3rem;
+    font-family: 'Victor Mono', monospace;
+  }
+/* #details{
+    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50%; 
+    margin: 0px 35px;
+    margin: 2%;
+    padding: 2%;
+    height: 44%;
+    width: 44%;
+    font-size: larger;
+    font-family: 'Victor Mono', monospace;
+    grid-template-columns: repeat(2,2fr);
+} */
+
+#detail::before{
+        content: "";
+        background: url('boys.png') no-repeat center center/cover;
+        position: absolute;
+        /* display: flex; 
+        top: 0px;
+        left: 0px; */
+        margin: 15%;
+        padding: 9%;
+        height: 4%;
+        width: 49%;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        opacity: 0.4;
+}
+/* #details input{
+    font-family: 'Victor Mono', monospace;
+    text-align: center;
+    display: flex;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px 11px;
+    font-size: 25px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+} */
+#details button{
+        display: block;
+        width: 108px;
+        margin: 20px;
+        box-shadow: 7px 5px 10px 4px black;
+        cursor: pointer;
+}
+.btn:hover{
+    background-color: gray;
+}
+ /* #details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 54% 44%;
+    height: 4%;
+    width: 4%;
+}  */
+/* .detail-item{
+    position: absolute;
+    content: "";
+    padding: 0px;
+    height: 0px;
+    width: 0px;
+    z-index: -1;
+    opacity: 0.4;
+} */
+
+/* #contact us{
+    background-color: black;
+} */
+/* #contact{
+    margin: 25%;
+    padding: 25%;
+  
+} 
+.navigation{
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    margin: 6%;
+    padding: 6%;
+    background-color: black;
+    color: white;  
+} */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    border-top: 2px solid white;
+  }
+
+.h-primary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Victor Mono', monospace;
+
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Victor Mono', monospace;
+  
+}
+.center{
+    text-align: center;
+    margin: 20px;
+}
